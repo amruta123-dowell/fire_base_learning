@@ -52,7 +52,8 @@ class _SignInScreenState extends State<SignInScreen> {
                   }
                 },
                 child: const Text("Sign in anonymous")),
-            OutlinedButton(onPressed: () {}, child: Text("Outlines button"))
+            OutlinedButton(
+                onPressed: () {}, child: const Text("Outlines button"))
           ],
         ),
       ),
