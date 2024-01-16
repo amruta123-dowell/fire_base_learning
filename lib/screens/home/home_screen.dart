@@ -62,11 +62,11 @@ class HomeScreen extends StatelessWidget {
                 ))
           ],
         ),
-        body: Column(
+        body: const Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
+              SizedBox(
                 height: 20,
               ),
               CoffeeListWidget()

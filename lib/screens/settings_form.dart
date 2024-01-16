@@ -156,8 +156,6 @@ class _SettingsFormState extends State<SettingsForm> {
                                     strength: _currentStrength?.toInt() ?? 100);
                           }
                           Navigator.pop(context);
-                          print(_currentName);
-                          print(_currentSugars);
                         },
                         child: const Text("Update"))
                   ],
