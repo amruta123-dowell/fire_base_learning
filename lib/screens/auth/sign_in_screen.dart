@@ -1,8 +1,6 @@
-import 'package:firebase_learning/controller.dart';
 import 'package:firebase_learning/custom_widgets/loading.dart';
 import 'package:firebase_learning/services/auth_service.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SignInScreen extends StatefulWidget {
   final Function toggleSignInButton;

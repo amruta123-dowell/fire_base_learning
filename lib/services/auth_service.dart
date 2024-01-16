@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
+
+import 'package:firebase_learning/services/data_base_service.dart';
 
 import '../models/user_model.dart';
 
@@ -45,6 +46,9 @@ class AuthService {
       UserCredential result = await auth.createUserWithEmailAndPassword(
           email: email, password: pass);
       User? user = result.user;
+      //add new user details
+      await DataBaseService(uid: user?.uid ?? "")
+          .updateUserData(sugarCubes: "1", name: "User 1", strength: 100);
       return _getUserDetailsFromFirebase(user);
     } catch (e) {
       print("the sign up error is ----> ${e.toString()}");
